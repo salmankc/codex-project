@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Kerala temple-inspired endless runner game for Android and web."
+    />
+    <meta name="theme-color" content="#1f5f53" />
+    <title>Kerala Temple Runner</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main id="app" class="game-shell">
+      <canvas id="game" aria-label="Kerala Temple Runner game canvas"></canvas>
+
+      <section id="hud" class="hud" aria-live="polite">
+        <div>
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>Coins</span>
+          <strong id="coins">0</strong>
+        </div>
+        <button id="pauseBtn" class="icon-button" type="button" aria-label="Pause game">II</button>
+      </section>
+
+      <section id="startScreen" class="overlay">
+        <div class="brand-mark">KT</div>
+        <h1>Kerala Temple Runner</h1>
+        <p>Run through a Kerala temple festival path. Swipe, jump, slide, collect coins, and dodge obstacles.</p>
+        <button id="startBtn" type="button">Start Game</button>
+      </section>
+
+      <section id="gameOverScreen" class="overlay hidden">
+        <div class="brand-mark">KT</div>
+        <h2>Run Complete</h2>
+        <p id="finalStats">Score 0 | Coins 0</p>
+        <button id="restartBtn" type="button">Play Again</button>
+      </section>
+
+      <section id="controlsHint" class="controls-hint">
+        <span>Swipe / Arrow keys</span>
+        <span>Up jump</span>
+        <span>Down slide</span>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
