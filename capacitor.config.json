@@ -1,0 +1,9 @@
+{
+  "appId": "com.seltrok.keralatemplerunner",
+  "appName": "Kerala Temple Runner",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
